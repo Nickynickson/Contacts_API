@@ -16,10 +16,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Connect to MongoDB
+//Connect to MongoDB
 connectDB();
 
-// Routes
+//Routes
 app.use('/contacts', contactsRouter);
 
 // Start the server
