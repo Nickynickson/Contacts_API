@@ -35,10 +35,16 @@
               "properties":{
                 "firstName":{
                   "type":"string"},
+                "lastName":{
+                  "type":"string"
+                },
                 "email":{
                   "type":"string"
                 },
-                "phone":{
+                "favoriteColor":{
+                  "type":"string"
+                },
+                "birthday":{
                   "type":"string"
                 }
               }
@@ -107,11 +113,17 @@
                     "firstName": {
                         "type": "string"
                     },
+                    "lastName": {
+                        "type": "string"
+                    },
                     "email": {
                         "type": "string"
                     },
-                    "phone": {
-                        "type": "string"
+                    "favoriteColor":{
+                      "type":"string"
+                    },
+                    "birthday":{
+                      "type":"string"
                     }
                 }
             },

@@ -59,7 +59,7 @@ router.post('/', async (req, res) => {
         }
 
         // Check for required fields
-        const requiredFields = ['firstName', 'email', 'phone'];
+        const requiredFields = ['firstName', 'lastName', 'email','favoriteColor','birthday'];
         for (const field of requiredFields) {
             if (!contactData[field]) {
                 return res.status(400).json({ message: `Invalid data: Missing required field '${field}'` });
@@ -93,7 +93,7 @@ router.put('/:id', async (req, res) => {
         }
 
         
-        const allowedFields = ['firstName', 'email', 'phone']; 
+        const allowedFields = ['firstName', 'lastName', 'email','favoriteColor','birthday']; 
         const hasInvalidFields = Object.keys(updatedData).some(field => !allowedFields.includes(field));
 
         if (hasInvalidFields) {
